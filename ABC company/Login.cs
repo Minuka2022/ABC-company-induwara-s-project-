@@ -65,5 +65,10 @@ namespace ABC_company
             new Reigster().Show();
             this.Hide();
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

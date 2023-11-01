@@ -31,5 +31,11 @@ namespace ABC_company
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            new Login().Show();
+            this.Hide();
+        }
     }
 }

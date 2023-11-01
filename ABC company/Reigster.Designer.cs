@@ -40,6 +40,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.textPassword = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label5
@@ -61,9 +62,9 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
             this.label4.Location = new System.Drawing.Point(84, 450);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 17);
+            this.label4.Size = new System.Drawing.Size(149, 17);
             this.label4.TabIndex = 13;
-            this.label4.Text = "Don\'t have a account";
+            this.label4.Text = "Do you have a account";
             // 
             // btn_clear
             // 
@@ -148,9 +149,9 @@
             this.label1.ForeColor = System.Drawing.Color.MediumSlateBlue;
             this.label1.Location = new System.Drawing.Point(34, 47);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 27);
+            this.label1.Size = new System.Drawing.Size(176, 27);
             this.label1.TabIndex = 5;
-            this.label1.Text = "EMS Login";
+            this.label1.Text = "EMS Register";
             // 
             // label6
             // 
@@ -189,11 +190,24 @@
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
+            this.label7.Location = new System.Drawing.Point(258, 9);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(19, 20);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "X";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
             // Reigster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(289, 511);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -229,5 +243,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textPassword;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label label7;
     }
 }
