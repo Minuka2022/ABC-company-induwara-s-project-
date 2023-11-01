@@ -106,6 +106,7 @@
             this.btn_login.TabIndex = 3;
             this.btn_login.Text = "Login";
             this.btn_login.UseVisualStyleBackColor = false;
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
             // 
             // btn_clear
             // 
@@ -119,6 +120,7 @@
             this.btn_clear.TabIndex = 3;
             this.btn_clear.Text = "Clear";
             this.btn_clear.UseVisualStyleBackColor = false;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
             // label4
             // 
@@ -138,6 +140,7 @@
             this.label5.Size = new System.Drawing.Size(58, 17);
             this.label5.TabIndex = 4;
             this.label5.Text = "Register";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // Login
             // 
@@ -157,9 +160,10 @@
             this.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

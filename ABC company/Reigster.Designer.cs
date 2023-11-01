@@ -32,13 +32,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btn_clear = new System.Windows.Forms.Button();
             this.btn_login = new System.Windows.Forms.Button();
-            this.textPassword = new System.Windows.Forms.TextBox();
+            this.textComPassword = new System.Windows.Forms.TextBox();
             this.textUsername = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textPassword = new System.Windows.Forms.TextBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label5
@@ -48,9 +49,10 @@
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.label5.Location = new System.Drawing.Point(125, 470);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 15);
+            this.label5.Size = new System.Drawing.Size(37, 15);
             this.label5.TabIndex = 12;
-            this.label5.Text = "Register";
+            this.label5.Text = "Login";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -76,6 +78,7 @@
             this.btn_clear.TabIndex = 10;
             this.btn_clear.Text = "Clear";
             this.btn_clear.UseVisualStyleBackColor = false;
+            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
             // btn_login
             // 
@@ -91,17 +94,19 @@
             this.btn_login.TabIndex = 11;
             this.btn_login.Text = "Register";
             this.btn_login.UseVisualStyleBackColor = false;
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
             // 
-            // textPassword
+            // textComPassword
             // 
-            this.textPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.textPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textPassword.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textPassword.Location = new System.Drawing.Point(39, 280);
-            this.textPassword.Multiline = true;
-            this.textPassword.Name = "textPassword";
-            this.textPassword.Size = new System.Drawing.Size(216, 28);
-            this.textPassword.TabIndex = 8;
+            this.textComPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.textComPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textComPassword.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textComPassword.Location = new System.Drawing.Point(39, 280);
+            this.textComPassword.Multiline = true;
+            this.textComPassword.Name = "textComPassword";
+            this.textComPassword.PasswordChar = '*';
+            this.textComPassword.Size = new System.Drawing.Size(216, 28);
+            this.textComPassword.TabIndex = 8;
             // 
             // textUsername
             // 
@@ -158,29 +163,44 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "Password";
             // 
-            // textBox1
+            // textPassword
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(39, 204);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(216, 28);
-            this.textBox1.TabIndex = 8;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.textPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textPassword.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textPassword.Location = new System.Drawing.Point(39, 204);
+            this.textPassword.Multiline = true;
+            this.textPassword.Name = "textPassword";
+            this.textPassword.PasswordChar = '*';
+            this.textPassword.Size = new System.Drawing.Size(216, 28);
+            this.textPassword.TabIndex = 8;
+            this.textPassword.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
+            this.checkBox1.Location = new System.Drawing.Point(87, 314);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(112, 19);
+            this.checkBox1.TabIndex = 14;
+            this.checkBox1.Text = "Show password";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // Reigster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(289, 511);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btn_clear);
             this.Controls.Add(this.btn_login);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.textPassword);
+            this.Controls.Add(this.textComPassword);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textUsername);
             this.Controls.Add(this.label3);
@@ -189,6 +209,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Reigster";
             this.Text = "Reigster";
+            this.Load += new System.EventHandler(this.Reigster_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,12 +221,13 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btn_clear;
         private System.Windows.Forms.Button btn_login;
-        private System.Windows.Forms.TextBox textPassword;
+        private System.Windows.Forms.TextBox textComPassword;
         private System.Windows.Forms.TextBox textUsername;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textPassword;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

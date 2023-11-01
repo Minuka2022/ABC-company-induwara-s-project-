@@ -1,6 +1,6 @@
 ﻿namespace ABC_company
 {
-    partial class Form1
+    partial class Main
     {
         /// <summary>
         /// Required designer variable.
@@ -36,7 +36,21 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -49,20 +63,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -176,6 +176,63 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Department Details";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(21, 232);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(91, 14);
+            this.label12.TabIndex = 1;
+            this.label12.Text = "Employee Type";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(21, 150);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(73, 14);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "Designation";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(21, 66);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(107, 14);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "Department Name";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(118, 229);
+            this.textBox8.Multiline = true;
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(218, 27);
+            this.textBox8.TabIndex = 0;
+            this.textBox8.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(118, 150);
+            this.textBox7.Multiline = true;
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(218, 27);
+            this.textBox7.TabIndex = 0;
+            this.textBox7.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(163, 63);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(173, 27);
+            this.textBox3.TabIndex = 0;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.richTextBox1);
@@ -192,6 +249,81 @@
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Contact Details";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(108, 53);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(213, 54);
+            this.richTextBox1.TabIndex = 2;
+            this.richTextBox1.Text = "";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(16, 285);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(77, 14);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "Home phone";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(16, 213);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(81, 14);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Mobile phone";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(16, 143);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(37, 14);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "Email";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(16, 66);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(52, 14);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Address";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(117, 277);
+            this.textBox6.Multiline = true;
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(209, 27);
+            this.textBox6.TabIndex = 0;
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(117, 207);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(209, 27);
+            this.textBox5.TabIndex = 0;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(108, 140);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(218, 27);
+            this.textBox4.TabIndex = 0;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // groupBox2
             // 
@@ -316,147 +448,16 @@
             this.dataGridView1.Size = new System.Drawing.Size(1105, 264);
             this.dataGridView1.TabIndex = 0;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(16, 66);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 14);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Address";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(16, 143);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(37, 14);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Email";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(16, 213);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(81, 14);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Mobile phone";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(16, 285);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(77, 14);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Home phone";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(108, 140);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(218, 27);
-            this.textBox4.TabIndex = 0;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(117, 207);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(209, 27);
-            this.textBox5.TabIndex = 0;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(117, 277);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(209, 27);
-            this.textBox6.TabIndex = 0;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(108, 53);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(213, 54);
-            this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = "";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(21, 66);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(107, 14);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "Department Name";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(21, 150);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(73, 14);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "Designation";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(21, 232);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(91, 14);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "Employee Type";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(163, 63);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(173, 27);
-            this.textBox3.TabIndex = 0;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(118, 150);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(218, 27);
-            this.textBox7.TabIndex = 0;
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(118, 229);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(218, 27);
-            this.textBox8.TabIndex = 0;
-            this.textBox8.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // Form1
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1167, 816);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
+            this.Name = "Main";
             this.Text = "EMPLOYEE MANAGMENT SYSTEM";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox4.ResumeLayout(false);
