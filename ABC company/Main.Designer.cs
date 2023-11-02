@@ -50,6 +50,7 @@
             this.textM_phone = new System.Windows.Forms.TextBox();
             this.textEmail = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -59,7 +60,11 @@
             this.text_fname = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.EMPID = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -81,7 +86,7 @@
             this.groupBox1.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1142, 458);
+            this.groupBox1.Size = new System.Drawing.Size(1304, 458);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Employee Registration";
@@ -95,7 +100,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("SF Pro Display", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.Control;
-            this.button4.Location = new System.Drawing.Point(1051, 13);
+            this.button4.Location = new System.Drawing.Point(1202, 17);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 32);
             this.button4.TabIndex = 4;
@@ -108,7 +113,7 @@
             this.button3.BackColor = System.Drawing.Color.RoyalBlue;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(203, 407);
+            this.button3.Location = new System.Drawing.Point(231, 407);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 26);
             this.button3.TabIndex = 3;
@@ -120,12 +125,13 @@
             this.button2.BackColor = System.Drawing.Color.LightSeaGreen;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(110, 407);
+            this.button2.Location = new System.Drawing.Point(133, 407);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 26);
             this.button2.TabIndex = 3;
             this.button2.Text = "Update";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -133,7 +139,7 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(21, 407);
+            this.button1.Location = new System.Drawing.Point(39, 407);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 26);
             this.button1.TabIndex = 3;
@@ -149,12 +155,13 @@
             this.groupBox4.Controls.Add(this.textEmploye_type);
             this.groupBox4.Controls.Add(this.textDesignation);
             this.groupBox4.Controls.Add(this.textDepartmnet);
-            this.groupBox4.Location = new System.Drawing.Point(764, 44);
+            this.groupBox4.Location = new System.Drawing.Point(915, 51);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(362, 338);
             this.groupBox4.TabIndex = 0;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Department Details";
+            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
             // label12
             // 
@@ -223,7 +230,7 @@
             this.groupBox3.Controls.Add(this.textHome_phone);
             this.groupBox3.Controls.Add(this.textM_phone);
             this.groupBox3.Controls.Add(this.textEmail);
-            this.groupBox3.Location = new System.Drawing.Point(391, 44);
+            this.groupBox3.Location = new System.Drawing.Point(481, 51);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(346, 338);
             this.groupBox3.TabIndex = 0;
@@ -312,15 +319,30 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.EMPID);
+            this.groupBox2.Controls.Add(this.label13);
+            this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.textLastname);
             this.groupBox2.Controls.Add(this.text_fname);
-            this.groupBox2.Location = new System.Drawing.Point(21, 44);
+            this.groupBox2.Location = new System.Drawing.Point(21, 51);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(347, 338);
+            this.groupBox2.Size = new System.Drawing.Size(374, 338);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Basic Details";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.comboBox1.Location = new System.Drawing.Point(112, 285);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(200, 22);
+            this.comboBox1.TabIndex = 5;
             // 
             // dateTimePicker1
             // 
@@ -363,7 +385,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(22, 66);
+            this.label2.Location = new System.Drawing.Point(22, 76);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 14);
             this.label2.TabIndex = 1;
@@ -379,7 +401,7 @@
             // 
             // text_fname
             // 
-            this.text_fname.Location = new System.Drawing.Point(112, 63);
+            this.text_fname.Location = new System.Drawing.Point(112, 66);
             this.text_fname.Multiline = true;
             this.text_fname.Name = "text_fname";
             this.text_fname.Size = new System.Drawing.Size(218, 27);
@@ -388,11 +410,13 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.button5);
+            this.groupBox5.Controls.Add(this.textBox1);
             this.groupBox5.Controls.Add(this.dataGridView1);
             this.groupBox5.Font = new System.Drawing.Font("SF Pro Display", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(13, 476);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(1141, 340);
+            this.groupBox5.Size = new System.Drawing.Size(1303, 388);
             this.groupBox5.TabIndex = 1;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Employee Details";
@@ -400,27 +424,65 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(20, 36);
+            this.dataGridView1.Location = new System.Drawing.Point(20, 74);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1105, 292);
+            this.dataGridView1.Size = new System.Drawing.Size(1277, 292);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // comboBox1
+            // label1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.comboBox1.Location = new System.Drawing.Point(112, 285);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 22);
-            this.comboBox1.TabIndex = 5;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(22, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(42, 14);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "EMPID";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(70, 34);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(10, 14);
+            this.label13.TabIndex = 1;
+            this.label13.Text = ":";
+            // 
+            // EMPID
+            // 
+            this.EMPID.AutoSize = true;
+            this.EMPID.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EMPID.Location = new System.Drawing.Point(86, 34);
+            this.EMPID.Name = "EMPID";
+            this.EMPID.Size = new System.Drawing.Size(0, 14);
+            this.EMPID.TabIndex = 1;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(20, 37);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(213, 21);
+            this.textBox1.TabIndex = 1;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(239, 37);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 2;
+            this.button5.Text = "Search";
+            this.button5.UseVisualStyleBackColor = false;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1167, 816);
+            this.ClientSize = new System.Drawing.Size(1328, 866);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox1);
             this.Name = "Main";
@@ -434,6 +496,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -473,6 +536,11 @@
         private System.Windows.Forms.TextBox textM_phone;
         private System.Windows.Forms.TextBox textEmail;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label EMPID;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

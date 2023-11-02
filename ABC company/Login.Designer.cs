@@ -76,7 +76,7 @@
             // 
             this.textUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.textUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textUsername.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textUsername.Font = new System.Drawing.Font("SF Pro Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textUsername.Location = new System.Drawing.Point(33, 180);
             this.textUsername.Multiline = true;
             this.textUsername.Name = "textUsername";

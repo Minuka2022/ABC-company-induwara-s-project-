@@ -51,6 +51,7 @@ namespace ABC_company
                 textPassword.Text = "";
                 textUsername.Focus();
             }
+            conn.Close();
         }
 
         private void btn_clear_Click(object sender, EventArgs e)

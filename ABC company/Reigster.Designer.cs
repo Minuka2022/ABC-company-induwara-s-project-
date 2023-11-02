@@ -101,7 +101,7 @@
             // 
             this.textComPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.textComPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textComPassword.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textComPassword.Font = new System.Drawing.Font("SF Pro Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textComPassword.Location = new System.Drawing.Point(39, 280);
             this.textComPassword.Multiline = true;
             this.textComPassword.Name = "textComPassword";
@@ -113,7 +113,7 @@
             // 
             this.textUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.textUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textUsername.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textUsername.Font = new System.Drawing.Font("SF Pro Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textUsername.Location = new System.Drawing.Point(39, 133);
             this.textUsername.Multiline = true;
             this.textUsername.Name = "textUsername";
@@ -168,7 +168,7 @@
             // 
             this.textPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.textPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textPassword.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textPassword.Font = new System.Drawing.Font("SF Pro Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textPassword.Location = new System.Drawing.Point(39, 204);
             this.textPassword.Multiline = true;
             this.textPassword.Name = "textPassword";
