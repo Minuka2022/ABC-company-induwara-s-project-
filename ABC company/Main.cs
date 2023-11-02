@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -17,6 +18,8 @@ namespace ABC_company
             InitializeComponent();
         }
 
+        SqlConnection conn = new SqlConnection("Data Source=DESKTOP-OI2O0B7\\SQLEXPRESS;Initial Catalog=AbcCompanyDB;Integrated Security=True");
+        SqlCommand cmd = new SqlCommand();
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
@@ -36,6 +39,16 @@ namespace ABC_company
         {
             new Login().Show();
             this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+
+            Employee emp1 = new Employee();
+            emp1.AddEmployee()
+
+           
         }
     }
 }
