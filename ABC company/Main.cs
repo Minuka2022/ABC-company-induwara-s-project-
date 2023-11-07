@@ -150,6 +150,7 @@ namespace ABC_company
                 text_fname.Text = SelectedRow.Cells[3].Value?.ToString();
                 textLastname.Text = SelectedRow.Cells[4].Value?.ToString();
 
+              
                 if (SelectedRow.Cells[5].Value is DateTime dateValue)
                 {
                     dateTimePicker1.Value = dateValue;
@@ -163,11 +164,16 @@ namespace ABC_company
                 textDepartmnet.Text = SelectedRow.Cells[11].Value?.ToString();
                 textDesignation.Text = SelectedRow.Cells[12].Value?.ToString();
                 textEmploye_type.Text = SelectedRow.Cells[13].Value?.ToString();
-
+               
             }
             else if (dataGridView1.Columns[e.ColumnIndex].Name == "Delete")
             {
+                DataGridViewRow SelectedRow = dataGridView1.Rows[e.RowIndex];
+
+                EMPID.Text = SelectedRow.Cells[2].Value?.ToString();
+           
                 DialogResult dialogResult = MessageBox.Show("Do you really want to delete this employee?", "Confirmation", MessageBoxButtons.YesNo);
+                MessageBox.Show("This is emp id " ,Emp_NO.ToString());
                 if (dialogResult == DialogResult.Yes)
                 {
                     int Emp_NO = int.Parse(EMPID.Text);
@@ -202,6 +208,7 @@ namespace ABC_company
             textDepartmnet.Text = "";
             textDesignation.Text = "";
             textEmploye_type.Text = "";
+
 
             show();
 
